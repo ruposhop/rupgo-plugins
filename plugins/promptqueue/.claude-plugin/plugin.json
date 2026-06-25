@@ -1,0 +1,19 @@
+{
+  "name": "promptqueue",
+  "version": "1.0.0",
+  "description": "Cola de prompts encadenados para Claude Code. Escribe prompts en un markdown y ejecutalos de uno en uno (con confirmacion) o en cadena desatendida, con estado persistente en el propio archivo.",
+  "author": {
+    "name": "Rupo",
+    "email": "hola@rupgo.com"
+  },
+  "homepage": "https://rupgo.com",
+  "license": "MIT",
+  "keywords": [
+    "prompts",
+    "workflow",
+    "queue",
+    "chaining",
+    "automation",
+    "rupgo"
+  ]
+}

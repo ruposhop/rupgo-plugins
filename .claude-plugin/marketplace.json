@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "rupgo-plugins",
+  "version": "1.0.0",
+  "description": "Plugins de rupgo.com para flujos de trabajo con Claude Code.",
+  "owner": {
+    "name": "Rupo",
+    "email": "hola@rupgo.com"
+  },
+  "plugins": [
+    {
+      "name": "promptqueue",
+      "source": "./plugins/promptqueue",
+      "description": "Cola de prompts encadenados: escribe tus prompts en un markdown y ejecutalos de uno en uno o en cadena, con estado persistente.",
+      "category": "productivity",
+      "keywords": [
+        "prompts",
+        "workflow",
+        "queue",
+        "automation",
+        "rupgo"
+      ]
+    }
+  ]
+}
