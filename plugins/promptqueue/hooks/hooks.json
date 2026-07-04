@@ -1,0 +1,17 @@
+{
+  "description": "Avisa al inicio de sesión si hay prompts pendientes en la cola de promptqueue",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/check-queue.sh\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

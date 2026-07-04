@@ -4,7 +4,7 @@ Marketplace de plugins de [rupgo.com](https://rupgo.com) para **Claude Code**.
 
 ## Plugins disponibles
 
-- **promptqueue** — Cola de prompts encadenados: escribe tus prompts en un markdown y ejecútalos de uno en uno o en cadena, con estado persistente. [Ver detalles](./plugins/promptqueue/README.md)
+- **promptqueue** — Cola de prompts: escribe tus tareas en un markdown y ejecútalas una a una o en cadena desatendida (en cadena, cada tarea corre en un subagente con contexto limpio), con estado persistente en el propio archivo. [Ver detalles](./plugins/promptqueue/README.md)
 
 ## Instalación
 
@@ -15,14 +15,11 @@ En Claude Code:
 /plugin install promptqueue@rupgo-plugins
 ```
 
-> Sustituye `TU_USUARIO` por tu usuario de GitHub una vez publiques este repo.
+## Mantenimiento (para publicar cambios)
 
-## Cómo publicar (para Rupo)
-
-1. Crea un repo **público** en GitHub llamado `rupgo-plugins`.
-2. Sube el contenido de esta carpeta a la raíz del repo.
-3. Comparte con tu comunidad las dos líneas de instalación de arriba (con tu usuario real).
-4. Para actualizar un plugin: sube cambios al repo y sube la `version` en su `plugin.json`. Tus usuarios refrescan con `/plugin marketplace update`.
+1. Haz los cambios en el plugin y sube la `version` de su `plugin.json` (ej. `1.2.0` → `1.2.1`).
+2. Haz push a `main`.
+3. Los usuarios reciben la actualización con `/plugin marketplace update rupgo-plugins`.
 
 ## Licencia
 

@@ -11,7 +11,7 @@
     {
       "name": "promptqueue",
       "source": "./plugins/promptqueue",
-      "description": "Cola de prompts encadenados: escribe tus prompts en un markdown y ejecutalos de uno en uno o en cadena, con estado persistente.",
+      "description": "Cola de prompts: escribe tus tareas en un markdown y ejecútalas una a una o en cadena desatendida (en cadena, cada tarea corre en un subagente con contexto limpio), con estado persistente en el propio archivo.",
       "category": "productivity",
       "keywords": [
         "prompts",
